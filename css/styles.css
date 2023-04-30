@@ -399,10 +399,14 @@ a {
   margin-bottom: 72px;
   line-height: 1.1;
 }
-.customers-list {
+.customers-item {
   display: flex;
   justify-content: space-between;
   gap: 24px;
+}
+.customers-list {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
 }
 
 .customers-link {
@@ -414,6 +418,10 @@ a {
   align-items: center;
   justify-content: center;
   color: var(--customers-icon-color);
+}
+
+.color-svg {
+  fill: currentColor;
 }
 .customers-link:hover,
 .customers-link:focus {
