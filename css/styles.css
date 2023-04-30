@@ -84,6 +84,8 @@ a {
   height: 0.05;
   background: #ffffff;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -162,12 +164,20 @@ a {
   |============================
 */
 .hero {
-  background: var(--accent-color);
-  /* max-width: 1440px;
-  height: 600px; */
+  background-color: var(--accent-color);
+  max-width: 1440px;
+  height: 600px;
   margin-right: auto;
   margin-left: auto;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .hero-title {
   max-width: 496px;
@@ -185,11 +195,12 @@ a {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.04em;
   color: var(--logo-color);
-  background-color: #4d5ae5;
+  background-color: var(--logo-color);
   margin: auto;
   display: block;
   height: 56px;
   min-width: 169px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn-text {
@@ -229,9 +240,16 @@ a {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--accent-color);
 }
 
+.benefist-icon {
+  display: flex;
+  background: var(--main-portfolio-background-color);
+  height: 112px;
+  justify-content: center;
+  align-items: center;
+}
 .benefist-list {
   display: flex;
   justify-content: space-between;
@@ -287,6 +305,8 @@ a {
 .team-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-item:not(:last-child) {
@@ -329,7 +349,75 @@ a {
   background-color: #ffffff;
   color: #434455;
   margin: 0;
+  margin-bottom: 8px;
 }
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--logo-color);
+  border-radius: 50%;
+  color: var(--main-portfolio-background-color);
+}
+.socials-icon {
+  fill: currentColor;
+}
+.socials-link:hover,
+.socials-link:focus {
+  background: #404bbf;
+}
+
+/**
+  |============================
+  | Customers
+  |============================
+*/
+
+.customers-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--accent-color);
+  margin-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.customers-icon {
+  display: flex;
+  width: 168px;
+  height: 88px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8e8f99;
+}
+.customers-link {
+  fill: currentColor;
+}
+.customers-icon:hover,
+.customers-link .customers-icon:focus .customers-link {
+  border: 1px solid #404bbf;
+  fill: #404bbf;
+}
+
 /**
   |============================
   | Footer styles
@@ -338,6 +426,11 @@ a {
 .footer {
   background: var(--accent-color);
   padding: 100px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-logo-studio {
@@ -367,6 +460,39 @@ a {
   line-height: 1.5;
   color: var(--main-portfolio-color);
   width: 264px;
+  margin-right: 120px;
+}
+.footer-social {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--logo-color);
+  border-radius: 50%;
+  color: var(--main-portfolio-background-color);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
 }
 
 /**
@@ -394,6 +520,8 @@ a {
   height: 48px;
   padding: 12px 24px;
   border: 1px solid #e7e9fc;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .nav-btn-text {
@@ -450,4 +578,9 @@ a {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+
+.services-container:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
