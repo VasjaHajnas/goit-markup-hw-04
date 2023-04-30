@@ -442,7 +442,10 @@ a {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
+}
+
+.footer-gap {
+  margin-right: 120px;
 }
 
 .footer-logo-studio {
@@ -501,8 +504,12 @@ a {
   background-color: var(--logo-color);
   border-radius: 50%;
   color: var(--main-portfolio-background-color);
+}
+
+.style-svg {
   fill: #f4f4fd;
 }
+
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: #31d0aa;
