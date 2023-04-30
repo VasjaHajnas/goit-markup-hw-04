@@ -442,6 +442,7 @@ a {
 .footer-container {
   display: flex;
   align-items: baseline;
+  gap: 120px;
 }
 
 .footer-logo-studio {
@@ -471,7 +472,6 @@ a {
   line-height: 1.5;
   color: var(--main-portfolio-color);
   width: 264px;
-  margin-right: 120px;
 }
 .footer-social {
   font-style: normal;
@@ -501,17 +501,13 @@ a {
   background-color: var(--logo-color);
   border-radius: 50%;
   color: var(--main-portfolio-background-color);
+  fill: #f4f4fd;
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: #31d0aa;
 }
 
-.footer-socials-icon {
-  width: 24px;
-  height: 24px;
-  fill: #f4f4fd;
-}
 /**
   |============================
   | Navigation
@@ -521,10 +517,6 @@ a {
 .section-title {
   padding: 96px 0 120px;
 }
-/* .nav-list-item {
-  display: block;
-} */
-
 .nav-list {
   display: flex;
   justify-content: center;
@@ -569,7 +561,7 @@ a {
   row-gap: 48px;
 }
 
-.services-link {
+.services-list {
   column-gap: 24px;
   width: calc((100% - 48px) / 3);
   display: block;
@@ -597,9 +589,11 @@ a {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-
-.services-container:hover,
-.services-container:focus {
+.services-link {
+  display: block;
+}
+.services-link:hover,
+.services-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
