@@ -174,10 +174,10 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1.jpg);
+    url(../images/img-name.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .hero-title {
   max-width: 496px;
@@ -249,6 +249,8 @@ a {
   height: 112px;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 .benefist-list {
   display: flex;
@@ -394,6 +396,7 @@ a {
   text-transform: capitalize;
   color: var(--accent-color);
   margin-bottom: 72px;
+  line-height: 1.1;
 }
 .customers-list {
   display: flex;
@@ -466,11 +469,12 @@ a {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
 }
+
 .footer-social-list {
   display: flex;
   flex-direction: row;
